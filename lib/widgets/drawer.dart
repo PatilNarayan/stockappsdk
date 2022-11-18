@@ -24,6 +24,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () => Navigator.pushNamed(context, 'home'),
               leading: Icon(
                 CupertinoIcons.home,
                 color: Colors.white,
@@ -56,6 +57,20 @@ class MyDrawer extends StatelessWidget {
               ),
               title: Text(
                 "Email me",
+                textScaleFactor: 1.2,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            ListTile(
+              onTap: () => Navigator.pushNamed(context, 'login'),
+              leading: Icon(
+                CupertinoIcons.arrowshape_turn_up_left_2_fill,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Log out",
                 textScaleFactor: 1.2,
                 style: TextStyle(
                   color: Colors.white,
